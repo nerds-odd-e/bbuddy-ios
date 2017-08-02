@@ -13,7 +13,6 @@
 		0C0AA8F91E52AB83008B4B00 /* AccountTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0AA8F81E52AB83008B4B00 /* AccountTest.swift */; };
 		0C0AA8FE1E52B81B008B4B00 /* Account.dto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0AA8FD1E52B81B008B4B00 /* Account.dto.swift */; };
 		0C0AA9011E52B892008B4B00 /* Account.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0AA9001E52B892008B4B00 /* Account.model.swift */; };
-		0C0AA9031E52E575008B4B00 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0AA9021E52E575008B4B00 /* GeneratedMocks.swift */; };
 		0C1282F51E73B3ED00D72735 /* AccountsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1282F41E73B3ED00D72735 /* AccountsTest.swift */; };
 		0C1A95B21E4B0CAB00B03F12 /* AccountsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A95B11E4B0CAB00B03F12 /* AccountsTableViewController.swift */; };
 		0C1A95B61E4B456200B03F12 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1A95B51E4B456200B03F12 /* Argo.framework */; };
@@ -33,6 +32,7 @@
 		0C545FD81E49BCA1004225E7 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C545FD71E49BCA1004225E7 /* Moya.framework */; };
 		0C545FDA1E49CF75004225E7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C545FD91E49CF75004225E7 /* Alamofire.framework */; };
 		0C545FDC1E49DDB5004225E7 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C545FDB1E49DDB5004225E7 /* Result.framework */; };
+		0C97CD531F3186A800DF51B9 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C97CD521F3186A800DF51B9 /* GeneratedMocks.swift */; };
 		0C9BE1801E481B580092439B /* Cely.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9BE17E1E481B580092439B /* Cely.framework */; };
 		0C9BE1811E481B580092439B /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9BE17F1E481B580092439B /* Locksmith.framework */; };
 		0C9BE1841E481D000092439B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9BE1831E481D000092439B /* User.swift */; };
@@ -112,7 +112,6 @@
 		0C0AA8F81E52AB83008B4B00 /* AccountTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTest.swift; sourceTree = "<group>"; };
 		0C0AA8FD1E52B81B008B4B00 /* Account.dto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Account.dto.swift; path = DTO/Account.dto.swift; sourceTree = "<group>"; };
 		0C0AA9001E52B892008B4B00 /* Account.model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.model.swift; sourceTree = "<group>"; };
-		0C0AA9021E52E575008B4B00 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		0C1282F41E73B3ED00D72735 /* AccountsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsTest.swift; sourceTree = "<group>"; };
 		0C1A95B11E4B0CAB00B03F12 /* AccountsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsTableViewController.swift; sourceTree = "<group>"; };
 		0C1A95B51E4B456200B03F12 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
@@ -134,6 +133,7 @@
 		0C545FD71E49BCA1004225E7 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		0C545FD91E49CF75004225E7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		0C545FDB1E49DDB5004225E7 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		0C97CD521F3186A800DF51B9 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		0C9BE17E1E481B580092439B /* Cely.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cely.framework; path = Carthage/Build/iOS/Cely.framework; sourceTree = "<group>"; };
 		0C9BE17F1E481B580092439B /* Locksmith.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Locksmith.framework; path = Carthage/Build/iOS/Locksmith.framework; sourceTree = "<group>"; };
 		0C9BE1831E481D000092439B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -204,8 +204,8 @@
 		0C0AA8EA1E52AAAE008B4B00 /* bbuddyTests */ = {
 			isa = PBXGroup;
 			children = (
+				0C97CD521F3186A800DF51B9 /* GeneratedMocks.swift */,
 				0C0AA8F81E52AB83008B4B00 /* AccountTest.swift */,
-				0C0AA9021E52E575008B4B00 /* GeneratedMocks.swift */,
 				0C1282F41E73B3ED00D72735 /* AccountsTest.swift */,
 				0C0AA8ED1E52AAAE008B4B00 /* Info.plist */,
 			);
@@ -369,11 +369,13 @@
 				TargetAttributes = {
 					0C0AA8E81E52AAAE008B4B00 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4HGH7Y559V;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0CC744B31E2C6781007EC830;
 					};
 					0CC744B31E2C6781007EC830 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4HGH7Y559V;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -506,7 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C1282F51E73B3ED00D72735 /* AccountsTest.swift in Sources */,
-				0C0AA9031E52E575008B4B00 /* GeneratedMocks.swift in Sources */,
+				0C97CD531F3186A800DF51B9 /* GeneratedMocks.swift in Sources */,
 				0C0AA8F91E52AB83008B4B00 /* AccountTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,6 +591,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4HGH7Y559V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -606,6 +609,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4HGH7Y559V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -718,6 +722,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4HGH7Y559V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -734,6 +739,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4HGH7Y559V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
