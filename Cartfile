@@ -1,4 +1,4 @@
-github "ChaiOne/Cely"
+github "ChaiOne/Cely" ~> 2.0
 github "thii/FontAwesome.swift"
 github "Moya/Moya"
 github "thoughtbot/Argo"

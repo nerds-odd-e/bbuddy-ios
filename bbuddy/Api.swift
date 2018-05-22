@@ -50,7 +50,7 @@ class Api {
         }
     }
     
-    private func mapArray<T:Decodable>(_ response: Response) throws -> [T] where T == T.DecodedType {
+    private func mapArray<T:Argo.Decodable>(_ response: Response) throws -> [T] where T == T.DecodedType {
         do {
             //map to JSON
             let JSON = try response.mapJSON()

@@ -24,6 +24,10 @@ protocol Authorizable {
 
 // MARK: - TargetType Protocol Implementation
 extension ApiDefinition: TargetType, Authorizable {
+    var headers: [String : String]? {
+        return ["Content-type": "application/json"]
+    }
+    
     internal var shouldAuthorize: Bool {
         switch self {
         case .signIn:
@@ -100,7 +104,15 @@ extension ApiDefinition: TargetType, Authorizable {
         }
     }
     var task: Task {
-        return .request
+        switch self {
+        case let .signIn(email, password):
+            return .requestParameters(parameters: ["email": email, "password": password], encoding: JSONEncoding.default)
+        case .addAccount(let account), .updateAccount(let account):
+            return .requestParameters(parameters: ["name": account.name, "balance": account.balance], encoding: JSONEncoding.default)
+        default:
+            return .requestPlain
+        }
+
     }
 }
 

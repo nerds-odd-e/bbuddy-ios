@@ -34,7 +34,6 @@
 		0C545FDC1E49DDB5004225E7 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C545FDB1E49DDB5004225E7 /* Result.framework */; };
 		0C97CD531F3186A800DF51B9 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C97CD521F3186A800DF51B9 /* GeneratedMocks.swift */; };
 		0C9BE1801E481B580092439B /* Cely.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9BE17E1E481B580092439B /* Cely.framework */; };
-		0C9BE1811E481B580092439B /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9BE17F1E481B580092439B /* Locksmith.framework */; };
 		0C9BE1841E481D000092439B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9BE1831E481D000092439B /* User.swift */; };
 		0CC744B81E2C6781007EC830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC744B71E2C6781007EC830 /* AppDelegate.swift */; };
 		0CC744BA1E2C6781007EC830 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC744B91E2C6781007EC830 /* DashboardViewController.swift */; };
@@ -77,7 +76,6 @@
 		edfc7aef8db95c8815cf87e6 /* Account.dto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0AA8FD1E52B81B008B4B00 /* Account.dto.swift */; };
 		f28f603fd97f30329dcb22f0 /* ApiDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C545FD51E49AEAA004225E7 /* ApiDefinition.swift */; };
 		f88817582588c79513843b9b /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1A95B51E4B456200B03F12 /* Argo.framework */; };
-		fd81016fdd01185f2e77459b /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9BE17F1E481B580092439B /* Locksmith.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,7 +133,6 @@
 		0C545FDB1E49DDB5004225E7 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		0C97CD521F3186A800DF51B9 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		0C9BE17E1E481B580092439B /* Cely.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cely.framework; path = Carthage/Build/iOS/Cely.framework; sourceTree = "<group>"; };
-		0C9BE17F1E481B580092439B /* Locksmith.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Locksmith.framework; path = Carthage/Build/iOS/Locksmith.framework; sourceTree = "<group>"; };
 		0C9BE1831E481D000092439B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0CC744B41E2C6781007EC830 /* bbuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bbuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC744B71E2C6781007EC830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -167,7 +164,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C9BE1801E481B580092439B /* Cely.framework in Frameworks */,
-				0C9BE1811E481B580092439B /* Locksmith.framework in Frameworks */,
 				0C545FD01E48B052004225E7 /* FontAwesome.framework in Frameworks */,
 				0C545FD81E49BCA1004225E7 /* Moya.framework in Frameworks */,
 				0C545FDA1E49CF75004225E7 /* Alamofire.framework in Frameworks */,
@@ -184,7 +180,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6e7c6bd6e7e3896e7133a90c /* Cely.framework in Frameworks */,
-				fd81016fdd01185f2e77459b /* Locksmith.framework in Frameworks */,
 				5d04e51e79e490518a5d94de /* FontAwesome.framework in Frameworks */,
 				9550edf0700089223037f0ad /* Moya.framework in Frameworks */,
 				3131414376c95da2afc8abae /* Alamofire.framework in Frameworks */,
@@ -245,7 +240,6 @@
 				0C545FD71E49BCA1004225E7 /* Moya.framework */,
 				0C545FCE1E48AFB1004225E7 /* FontAwesome.framework */,
 				0C9BE17E1E481B580092439B /* Cely.framework */,
-				0C9BE17F1E481B580092439B /* Locksmith.framework */,
 				0c25ed4e90875cbf6e4dd15c /* CFNetwork.framework */,
 				bea15760a047c1dd573eee03 /* calabash.framework */,
 			);
@@ -455,7 +449,6 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Cely.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Locksmith.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/FontAwesome.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",

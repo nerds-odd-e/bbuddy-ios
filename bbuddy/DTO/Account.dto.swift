@@ -19,7 +19,7 @@ extension DTO{
     }
 }
 
-extension DTO.Account: Decodable {
+extension DTO.Account: Argo.Decodable {
     static func decode(_ json: JSON) -> Decoded<DTO.Account> {
         return curry(DTO.Account.init)
             <^> json <| "id"
