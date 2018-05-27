@@ -474,7 +474,6 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Cely.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Locksmith.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/FontAwesome.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
@@ -721,6 +720,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = bbuddy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "odd-e.bbuddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -738,6 +738,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = bbuddy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "odd-e.bbuddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -755,7 +756,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				INFOPLIST_FILE = bbuddy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -780,7 +781,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				INFOPLIST_FILE = bbuddy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
