@@ -1,6 +1,6 @@
-github "ChaiOne/Cely" ~> 2.0
+github "cely-tools/Cely" ~> 2.1
 github "thii/FontAwesome.swift"
-github "Moya/Moya"
+github "Moya/Moya" ~> 14.0
 github "thoughtbot/Argo"
 github "thoughtbot/Curry"
 github "SwifterSwift/SwifterSwift"

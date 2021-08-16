@@ -12,6 +12,6 @@ import FontAwesome
 
 struct CottonCandy: CelyStyle {
     func appLogo() -> UIImage? {
-        return UIImage.fontAwesomeIcon(name: .money, textColor: UIColor.green, size: CGSize(width: 300, height: 300))
+        return UIImage.fontAwesomeIcon(name: .moneyBill, style: .solid, textColor: UIColor.green, size: CGSize(width: 300, height: 300))
     }
 }

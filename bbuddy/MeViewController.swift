@@ -15,7 +15,7 @@ class MeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tabBarItem.image = UIImage.fontAwesomeIcon(name: .user, textColor: UIColor.black, size: CGSize(width: 30, height: 30))
+        self.tabBarItem.image = UIImage.fontAwesomeIcon(name: .user, style: .solid, textColor: UIColor.black, size: CGSize(width: 30, height: 30))
     }
 
     @IBAction func signOut(_ sender: UIButton) {

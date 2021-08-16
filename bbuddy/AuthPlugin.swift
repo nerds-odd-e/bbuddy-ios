@@ -8,7 +8,6 @@
 
 import Foundation
 import Moya
-import Result
 
 struct AuthorizedToken {
     let uid: String
@@ -25,8 +24,8 @@ struct AuthPlugin: PluginType {
             let token = tokenClosure(),
             let target = target as? Authorizable,
             target.shouldAuthorize
-            else {
-                return request
+        else {
+            return request
         }
         
         var request = request
@@ -38,12 +37,19 @@ struct AuthPlugin: PluginType {
     }
     
     func didReceive(_ result: Result<Response, MoyaError>, target: TargetType) {
-        if let headers = (result.value?.response as? HTTPURLResponse)?.allHeaderFields,
-            let uid = headers["uid"] as? String,
-            let client = headers["client"] as? String,
-            let accessToken = headers["access-token"] as? String,
-            let type = headers["token-type"] as? String {
-            User.save([.token: accessToken, .email: uid, .client: client, .type: type])
+        switch result {
+        case .success(let response):
+            if let headers = response.response?.allHeaderFields,
+               let uid = headers["uid"] as? String,
+               let client = headers["client"] as? String,
+               let accessToken = headers["access-token"] as? String,
+               let type = headers["token-type"] as? String {
+                if !accessToken.isEmpty {
+                    User.save([.token: accessToken, .email: uid, .client: client, .type: type])
+                }
+            }
+        default:
+            break
         }
     }
 }

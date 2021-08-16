@@ -14,10 +14,10 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tabBarIcons = [FontAwesome.tachometer, FontAwesome.book, FontAwesome.user]
+        let tabBarIcons = [FontAwesome.tachometerAlt, FontAwesome.book, FontAwesome.user]
 
         self.tabBar.items?.forEach {
-            $0.image = UIImage.fontAwesomeIcon(name: tabBarIcons[$0.tag], textColor: UIColor.black, size: CGSize(width: 30, height: 30))
+            $0.image = UIImage.fontAwesomeIcon(name: tabBarIcons[$0.tag], style: .solid, textColor: UIColor.black, size: CGSize(width: 30, height: 30))
         }
     }
 
