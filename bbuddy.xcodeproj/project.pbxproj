@@ -21,7 +21,6 @@
 		0C545FD21E48B18F004225E7 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C545FD11E48B18F004225E7 /* MainTabBarViewController.swift */; };
 		0C545FD41E499FD0004225E7 /* LoginStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C545FD31E499FD0004225E7 /* LoginStyles.swift */; };
 		0C545FD61E49AEAA004225E7 /* ApiDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C545FD51E49AEAA004225E7 /* ApiDefinition.swift */; };
-		0C97CD531F3186A800DF51B9 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C97CD521F3186A800DF51B9 /* GeneratedMocks.swift */; };
 		0C9BE1841E481D000092439B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9BE1831E481D000092439B /* User.swift */; };
 		0C9D79E526C7BC5E00C2FED1 /* Cely.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9D79E126C7BB0900C2FED1 /* Cely.xcframework */; };
 		0C9D79E626C7BC5E00C2FED1 /* Cely.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9D79E126C7BB0900C2FED1 /* Cely.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -58,14 +57,12 @@
 		0C9D7A3126C7BE0E00C2FED1 /* Runes.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9D79EE26C7BC5E00C2FED1 /* Runes.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0C9D7A3226C7BE0E00C2FED1 /* Typhoon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9D79E926C7BC5E00C2FED1 /* Typhoon.xcframework */; };
 		0C9D7A3326C7BE0E00C2FED1 /* Typhoon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9D79E926C7BC5E00C2FED1 /* Typhoon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C9D7A3626CA5EC400C2FED1 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D7A3526CA5EC400C2FED1 /* GeneratedMocks.swift */; };
 		0CC744B81E2C6781007EC830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC744B71E2C6781007EC830 /* AppDelegate.swift */; };
 		0CC744BA1E2C6781007EC830 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC744B91E2C6781007EC830 /* DashboardViewController.swift */; };
 		0CC744BF1E2C6781007EC830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC744BD1E2C6781007EC830 /* Main.storyboard */; };
 		0CC744C11E2C6781007EC830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC744C01E2C6781007EC830 /* Assets.xcassets */; };
 		0CC744C41E2C6781007EC830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC744C21E2C6781007EC830 /* LaunchScreen.storyboard */; };
-		0CD98E131E7A89A60017C334 /* Cuckoo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C0AA8F51E52AAD1008B4B00 /* Cuckoo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0CD98E141E7A89A60017C334 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C1A95F21E4EC7E500B03F12 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0CD98E151E7A89A60017C334 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C1A95F31E4EC7E500B03F12 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		19fe892539bc4e20dfcc9d20 /* AuthPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A95C91E4E01FC00B03F12 /* AuthPlugin.swift */; };
 		222da3d8b5e0d56287d188d0 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C545FC61E486598004225E7 /* MeViewController.swift */; };
 		3b36d6776f7471e62ad6f888 /* AccountsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A95B11E4B0CAB00B03F12 /* AccountsTableViewController.swift */; };
@@ -139,18 +136,6 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0CD98E121E7A89880017C334 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0CD98E131E7A89A60017C334 /* Cuckoo.framework in CopyFiles */,
-				0CD98E141E7A89A60017C334 /* Nimble.framework in CopyFiles */,
-				0CD98E151E7A89A60017C334 /* Quick.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -181,7 +166,6 @@
 		0C545FD71E49BCA1004225E7 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		0C545FD91E49CF75004225E7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		0C545FDB1E49DDB5004225E7 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
-		0C97CD521F3186A800DF51B9 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		0C9BE17E1E481B580092439B /* Cely.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cely.framework; path = Carthage/Build/iOS/Cely.framework; sourceTree = "<group>"; };
 		0C9BE1831E481D000092439B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0C9D79E126C7BB0900C2FED1 /* Cely.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Cely.xcframework; path = Carthage/Build/Cely.xcframework; sourceTree = "<group>"; };
@@ -204,6 +188,7 @@
 		0C9D79F826C7BC5E00C2FED1 /* SwifterSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwifterSwift.xcframework; path = Carthage/Build/SwifterSwift.xcframework; sourceTree = "<group>"; };
 		0C9D79F926C7BC5E00C2FED1 /* Moya.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Moya.xcframework; path = Carthage/Build/Moya.xcframework; sourceTree = "<group>"; };
 		0C9D79FA26C7BC5E00C2FED1 /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxCocoa.xcframework; path = Carthage/Build/RxCocoa.xcframework; sourceTree = "<group>"; };
+		0C9D7A3526CA5EC400C2FED1 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		0CC744B41E2C6781007EC830 /* bbuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bbuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC744B71E2C6781007EC830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CC744B91E2C6781007EC830 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -267,7 +252,7 @@
 		0C0AA8EA1E52AAAE008B4B00 /* bbuddyTests */ = {
 			isa = PBXGroup;
 			children = (
-				0C97CD521F3186A800DF51B9 /* GeneratedMocks.swift */,
+				0C9D7A3526CA5EC400C2FED1 /* GeneratedMocks.swift */,
 				0C0AA8F81E52AB83008B4B00 /* AccountTest.swift */,
 				0C1282F41E73B3ED00D72735 /* AccountsTest.swift */,
 				0C0AA8ED1E52AAAE008B4B00 /* Info.plist */,
@@ -387,11 +372,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C0AA8F21E52AAAE008B4B00 /* Build configuration list for PBXNativeTarget "bbuddyTests" */;
 			buildPhases = (
+				0C0AA8F71E52AAD9008B4B00 /* ShellScript */,
 				0C0AA8E51E52AAAE008B4B00 /* Sources */,
 				0C0AA8E61E52AAAE008B4B00 /* Frameworks */,
 				0C0AA8E71E52AAAE008B4B00 /* Resources */,
-				0C0AA8F71E52AAD9008B4B00 /* ShellScript */,
-				0CD98E121E7A89880017C334 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -588,7 +572,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C1282F51E73B3ED00D72735 /* AccountsTest.swift in Sources */,
-				0C97CD531F3186A800DF51B9 /* GeneratedMocks.swift in Sources */,
+				0C9D7A3626CA5EC400C2FED1 /* GeneratedMocks.swift in Sources */,
 				0C0AA8F91E52AB83008B4B00 /* AccountTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
