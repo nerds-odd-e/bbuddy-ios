@@ -4,6 +4,5 @@ github "Moya/Moya" ~> 14.0
 github "thoughtbot/Argo"
 github "thoughtbot/Curry"
 github "SwifterSwift/SwifterSwift"
-github "SwiftKit/Cuckoo"
 github "appsquickly/Typhoon"
-github "ReactiveX/RxSwift"
+#github "ReactiveX/RxSwift"
