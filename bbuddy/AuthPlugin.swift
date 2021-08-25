@@ -8,12 +8,34 @@
 
 import Foundation
 import Moya
+import KeychainAccess
 
 struct AuthorizedToken {
     let uid: String
     let client: String
     let accessToken: String
     let type: String
+    let expiry: Int
+    
+    static func load() -> Self {
+        let keychain = Keychain(service: "com.odd-e.bbuddy")
+        return AuthorizedToken(uid: keychain["uid"] ?? "", client: keychain["client"] ?? "", accessToken: keychain["accessToken"] ?? "", type: keychain["type"] ?? "", expiry: Int(keychain["expiry"] ?? "0")!)
+    }
+    
+    static func valid() -> Bool {
+        let token = Self.load()
+        let interval = TimeInterval(token.expiry)
+        return !token.accessToken.isEmpty && Date(timeIntervalSince1970: interval) > Date()
+    }
+    
+    func save() {
+        let keychain = Keychain(service: "com.odd-e.bbuddy")
+        keychain["uid"] = uid
+        keychain["client"] = client
+        keychain["accessToken"] = accessToken
+        keychain["type"] = type
+        keychain["expiry"] = String(expiry)
+    }
 }
 
 struct AuthPlugin: PluginType {
@@ -43,9 +65,13 @@ struct AuthPlugin: PluginType {
                let uid = headers["uid"] as? String,
                let client = headers["client"] as? String,
                let accessToken = headers["access-token"] as? String,
-               let type = headers["token-type"] as? String {
+               let type = headers["token-type"] as? String,
+               let expiry = headers["expiry"] as? String {
                 if !accessToken.isEmpty {
-                    User.save([.token: accessToken, .email: uid, .client: client, .type: type])
+                    if let expiry = Int(expiry) {
+                        AuthorizedToken(uid: uid, client: client, accessToken: accessToken, type: type, expiry: expiry).save()
+//                    User.save([.token: accessToken, .email: uid, .client: client, .type: type])
+                    }
                 }
             }
         default:

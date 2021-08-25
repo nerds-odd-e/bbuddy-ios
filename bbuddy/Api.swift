@@ -15,19 +15,7 @@ class Api {
     private let provider  = MoyaProvider<ApiDefinition>(
         plugins: [
             AuthPlugin(tokenClosure: {
-                if
-                    let uid = User.get(.email) as? String,
-                    let client = User.get(.client) as? String,
-                    let accessToken = User.get(.token) as? String,
-                    let type = User.get(.type) as? String {
-                    return AuthorizedToken(
-                        uid: uid,
-                        client: client,
-                        accessToken: accessToken,
-                        type: type
-                    )
-                }
-                return nil
+                return AuthorizedToken.load()
             })
         ]
     )
@@ -40,7 +28,7 @@ class Api {
                 case 200...299:
                     handler(response)
                 case 401:
-                    Cely.logout()
+                    NotificationCenter.default.post(name: Notification.Name(rawValue: AuthStatus.loggedOut.rawValue), object: AuthStatus.loggedOut)
                 default:
                     print("error: \(response.statusCode)")
                 }
@@ -81,7 +69,8 @@ class Api {
     
     func signIn(_ email: String, password: String, action: @escaping () -> Void){
         request(.signIn(email: email, password: password)) { _ in
-            Cely.changeStatus(to: .loggedIn)
+//            Cely.changeStatus(to: .loggedIn)
+            NotificationCenter.default.post(name: Notification.Name(rawValue: AuthStatus.loggedIn.rawValue), object: AuthStatus.loggedIn)
             action()
         }
     }

@@ -19,7 +19,7 @@ class MeViewController: UIViewController {
     }
 
     @IBAction func signOut(_ sender: UIButton) {
-        Cely.logout()
+        NotificationCenter.default.post(name: Notification.Name(rawValue: AuthStatus.loggedOut.rawValue), object: AuthStatus.loggedOut)
     }
     
 

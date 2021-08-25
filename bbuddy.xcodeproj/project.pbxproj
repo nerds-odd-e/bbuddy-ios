@@ -58,6 +58,11 @@
 		0C9D7A3226C7BE0E00C2FED1 /* Typhoon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9D79E926C7BC5E00C2FED1 /* Typhoon.xcframework */; };
 		0C9D7A3326C7BE0E00C2FED1 /* Typhoon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9D79E926C7BC5E00C2FED1 /* Typhoon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0C9D7A3626CA5EC400C2FED1 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D7A3526CA5EC400C2FED1 /* GeneratedMocks.swift */; };
+		0CBD6B8326D4E42900786D9E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD6B8226D4E42900786D9E /* LoginView.swift */; };
+		0CBD6B8526D4F47000786D9E /* KeychainAccess.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CBD6B8426D4F47000786D9E /* KeychainAccess.xcframework */; };
+		0CBD6B8626D4F47000786D9E /* KeychainAccess.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CBD6B8426D4F47000786D9E /* KeychainAccess.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0CBD6B8826D5F8A700786D9E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD6B8726D5F8A700786D9E /* LoginViewController.swift */; };
+		0CBD6B8A26D6006A00786D9E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CBD6B8926D6006A00786D9E /* Login.storyboard */; };
 		0CC744B81E2C6781007EC830 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC744B71E2C6781007EC830 /* AppDelegate.swift */; };
 		0CC744BA1E2C6781007EC830 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC744B91E2C6781007EC830 /* DashboardViewController.swift */; };
 		0CC744BF1E2C6781007EC830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC744BD1E2C6781007EC830 /* Main.storyboard */; };
@@ -107,6 +112,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				0C9D7A0226C7BC5E00C2FED1 /* Alamofire.xcframework in Embed Frameworks */,
+				0CBD6B8626D4F47000786D9E /* KeychainAccess.xcframework in Embed Frameworks */,
 				0C9D7A0626C7BC5E00C2FED1 /* FontAwesome.xcframework in Embed Frameworks */,
 				0C9D7A0E26C7BC5E00C2FED1 /* Curry.xcframework in Embed Frameworks */,
 				0C9D7A0826C7BC5E00C2FED1 /* Runes.xcframework in Embed Frameworks */,
@@ -189,6 +195,10 @@
 		0C9D79F926C7BC5E00C2FED1 /* Moya.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Moya.xcframework; path = Carthage/Build/Moya.xcframework; sourceTree = "<group>"; };
 		0C9D79FA26C7BC5E00C2FED1 /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxCocoa.xcframework; path = Carthage/Build/RxCocoa.xcframework; sourceTree = "<group>"; };
 		0C9D7A3526CA5EC400C2FED1 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		0CBD6B8226D4E42900786D9E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0CBD6B8426D4F47000786D9E /* KeychainAccess.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KeychainAccess.xcframework; path = Carthage/Build/KeychainAccess.xcframework; sourceTree = "<group>"; };
+		0CBD6B8726D5F8A700786D9E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0CBD6B8926D6006A00786D9E /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		0CC744B41E2C6781007EC830 /* bbuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bbuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC744B71E2C6781007EC830 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CC744B91E2C6781007EC830 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -219,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C9D7A0126C7BC5E00C2FED1 /* Alamofire.xcframework in Frameworks */,
+				0CBD6B8526D4F47000786D9E /* KeychainAccess.xcframework in Frameworks */,
 				0C9D7A0526C7BC5E00C2FED1 /* FontAwesome.xcframework in Frameworks */,
 				0C9D7A0D26C7BC5E00C2FED1 /* Curry.xcframework in Frameworks */,
 				0C9D7A0726C7BC5E00C2FED1 /* Runes.xcframework in Frameworks */,
@@ -281,6 +292,7 @@
 		0C9BE17D1E481B580092439B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0CBD6B8426D4F47000786D9E /* KeychainAccess.xcframework */,
 				0C9D79EB26C7BC5E00C2FED1 /* Alamofire.xcframework */,
 				0C9D79F426C7BC5E00C2FED1 /* Argo.xcframework */,
 				0C9D79F026C7BC5E00C2FED1 /* Cuckoo.xcframework */,
@@ -347,12 +359,15 @@
 				0C0AA8FF1E52B87C008B4B00 /* Models */,
 				0C0AA8FC1E52B74A008B4B00 /* DTO */,
 				0CC744B71E2C6781007EC830 /* AppDelegate.swift */,
+				0CBD6B8726D5F8A700786D9E /* LoginViewController.swift */,
 				0CC744B91E2C6781007EC830 /* DashboardViewController.swift */,
+				0CBD6B8926D6006A00786D9E /* Login.storyboard */,
 				0C545FD51E49AEAA004225E7 /* ApiDefinition.swift */,
 				0C1A95C91E4E01FC00B03F12 /* AuthPlugin.swift */,
 				0C1A95C71E4DF1AE00B03F12 /* Api.swift */,
 				0CC744BD1E2C6781007EC830 /* Main.storyboard */,
 				0C1A95C51E4D936D00B03F12 /* AccountDetailViewController.swift */,
+				0CBD6B8226D4E42900786D9E /* LoginView.swift */,
 				0C1A95B11E4B0CAB00B03F12 /* AccountsTableViewController.swift */,
 				0C545FD31E499FD0004225E7 /* LoginStyles.swift */,
 				0C545FD11E48B18F004225E7 /* MainTabBarViewController.swift */,
@@ -480,6 +495,7 @@
 			files = (
 				0CC744C41E2C6781007EC830 /* LaunchScreen.storyboard in Resources */,
 				0CC744C11E2C6781007EC830 /* Assets.xcassets in Resources */,
+				0CBD6B8A26D6006A00786D9E /* Login.storyboard in Resources */,
 				0C1A95CD1E4EC76100B03F12 /* Cartfile.private in Resources */,
 				0C545FC91E4869AC004225E7 /* Cartfile in Resources */,
 				0CC744BF1E2C6781007EC830 /* Main.storyboard in Resources */,
@@ -514,56 +530,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# Define output file. Change \"$PROJECT_DIR/Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"$PROJECT_DIR/bbuddyTests/GeneratedMocks.swift\"\necho \"Generated Mocks File = $OUTPUT_FILE\"\n\n# Define input directory. Change \"$PROJECT_DIR\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"$PROJECT_DIR/bbuddy\"\necho \"Mocks Input Directory = $INPUT_DIR\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n${PROJECT_DIR}/Carthage/Checkouts/Cuckoo/run generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"$INPUT_DIR/Api.swift\"\n# ... and so forth\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.";
 		};
-		0C9BE1821E481C0B0092439B /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Cely.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/FontAwesome.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Argo.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Runes.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Curry.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Typhoon.framework",
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		1aaa640a5e8a803c5bd0a4b3 /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Cely.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/FontAwesome.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Argo.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Runes.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Curry.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Typhoon.framework",
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -594,7 +560,9 @@
 				0CC744B81E2C6781007EC830 /* AppDelegate.swift in Sources */,
 				0C545FD61E49AEAA004225E7 /* ApiDefinition.swift in Sources */,
 				0CC744BA1E2C6781007EC830 /* DashboardViewController.swift in Sources */,
+				0CBD6B8826D5F8A700786D9E /* LoginViewController.swift in Sources */,
 				EBC6D92F1E3A9DBB80672EB7 /* Accounts.model.swift in Sources */,
+				0CBD6B8326D4E42900786D9E /* LoginView.swift in Sources */,
 				EBC6D8B83F686E019CA3BAC6 /* DTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -821,8 +789,11 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = bbuddy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "odd-e.bbuddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -839,8 +810,11 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = bbuddy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "odd-e.bbuddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -858,7 +832,10 @@
 				);
 				INFOPLIST_FILE = bbuddy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-force_load",
@@ -883,7 +860,10 @@
 				);
 				INFOPLIST_FILE = bbuddy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-force_load",
