@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Cely
 import Moya
 
 
@@ -24,14 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        Cely.setup(with: window!, forModel: User(), requiredProperties: [.token, .email, .client], withOptions: [
-//            .loginStyle: CottonCandy(),
-//            .loginCompletionBlock: { (username: String, password: String) in
-//                let api = Api()
-//                api.signIn(username, password: password, action: {})
-//            }
-//            ])
-        
         NotificationCenter.default.addObserver(self, selector: #selector(self.authStatusChanged), name: NSNotification.Name(AuthStatus.loggedOut.rawValue), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.authStatusChanged), name: NSNotification.Name(AuthStatus.loggedIn.rawValue), object: nil)
         if !AuthorizedToken.valid() {

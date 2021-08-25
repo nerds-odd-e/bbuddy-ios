@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Cely
 import FontAwesome
 
 class MeViewController: UIViewController {

@@ -1,5 +1,4 @@
 github "kishikawakatsumi/KeychainAccess"
-github "cely-tools/Cely" ~> 2.1
 github "thii/FontAwesome.swift"
 github "Moya/Moya" ~> 14.0
 github "thoughtbot/Argo"

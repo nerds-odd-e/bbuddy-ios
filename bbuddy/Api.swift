@@ -8,7 +8,6 @@
 
 import Foundation
 import Moya
-import Cely
 import Argo
 
 class Api {
@@ -69,7 +68,6 @@ class Api {
     
     func signIn(_ email: String, password: String, action: @escaping () -> Void){
         request(.signIn(email: email, password: password)) { _ in
-//            Cely.changeStatus(to: .loggedIn)
             NotificationCenter.default.post(name: Notification.Name(rawValue: AuthStatus.loggedIn.rawValue), object: AuthStatus.loggedIn)
             action()
         }

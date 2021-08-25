@@ -70,7 +70,6 @@ struct AuthPlugin: PluginType {
                 if !accessToken.isEmpty {
                     if let expiry = Int(expiry) {
                         AuthorizedToken(uid: uid, client: client, accessToken: accessToken, type: type, expiry: expiry).save()
-//                    User.save([.token: accessToken, .email: uid, .client: client, .type: type])
                     }
                 }
             }
