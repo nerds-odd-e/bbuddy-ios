@@ -28,6 +28,15 @@ struct AuthorizedToken {
         return !token.accessToken.isEmpty && Date(timeIntervalSince1970: interval) > Date()
     }
     
+    static func clear() {
+        let keychain = Keychain(service: "com.odd-e.bbuddy")
+        keychain["uid"] = nil
+        keychain["client"] = nil
+        keychain["accessToken"] = nil
+        keychain["type"] = nil
+        keychain["expiry"] = nil
+    }
+    
     func save() {
         let keychain = Keychain(service: "com.odd-e.bbuddy")
         keychain["uid"] = uid

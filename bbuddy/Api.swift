@@ -27,6 +27,7 @@ class Api {
                 case 200...299:
                     handler(response)
                 case 401:
+                    AuthorizedToken.clear()
                     NotificationCenter.default.post(name: Notification.Name(rawValue: AuthStatus.loggedOut.rawValue), object: AuthStatus.loggedOut)
                 default:
                     print("error: \(response.statusCode)")
