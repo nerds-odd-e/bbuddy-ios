@@ -76,8 +76,10 @@
 		97e6243cf636338fd4194361 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C545FD11E48B18F004225E7 /* MainTabBarViewController.swift */; };
 		99a31dfd06d6ec38a68b82bf /* Cartfile.private in Resources */ = {isa = PBXBuildFile; fileRef = 0C1A95CC1E4EC76100B03F12 /* Cartfile.private */; };
 		EBC6D04DCAFFA2057D06FB24 /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6D80ADA8E08B87CFC678B /* DTO.swift */; };
+		EBC6D1E4DA3C8409395D6E70 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6DA052FDF648D764DC75A /* Auth.swift */; };
 		EBC6D8B83F686E019CA3BAC6 /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6D80ADA8E08B87CFC678B /* DTO.swift */; };
 		EBC6D92F1E3A9DBB80672EB7 /* Accounts.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6DAB39A17406061B40971 /* Accounts.model.swift */; };
+		EBC6DA6EF43004C1C5D1BA3C /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6DA052FDF648D764DC75A /* Auth.swift */; };
 		aa823d3e52a3e8916a4f92d1 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 0C545FC81E4869AC004225E7 /* Cartfile */; };
 		b010197f2148636eb5117101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC744BD1E2C6781007EC830 /* Main.storyboard */; };
 		da622fade7652e52dbf2b71d /* Account.model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0AA9001E52B892008B4B00 /* Account.model.swift */; };
@@ -198,6 +200,7 @@
 		0c25ed4e90875cbf6e4dd15c /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		746D8FCE1E6EE6C8007D75D1 /* bbuddy-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bbuddy-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC6D80ADA8E08B87CFC678B /* DTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
+		EBC6DA052FDF648D764DC75A /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		EBC6DAB39A17406061B40971 /* Accounts.model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accounts.model.swift; sourceTree = "<group>"; };
 		bea15760a047c1dd573eee03 /* calabash.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -361,6 +364,7 @@
 				0CC744C01E2C6781007EC830 /* Assets.xcassets */,
 				0CC744C21E2C6781007EC830 /* LaunchScreen.storyboard */,
 				0CC744C51E2C6781007EC830 /* Info.plist */,
+				EBC6DA052FDF648D764DC75A /* Auth.swift */,
 			);
 			path = bbuddy;
 			sourceTree = "<group>";
@@ -548,6 +552,7 @@
 				EBC6D92F1E3A9DBB80672EB7 /* Accounts.model.swift in Sources */,
 				0CBD6B8326D4E42900786D9E /* LoginView.swift in Sources */,
 				EBC6D8B83F686E019CA3BAC6 /* DTO.swift in Sources */,
+				EBC6D1E4DA3C8409395D6E70 /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +573,7 @@
 				440b96c67f742c7946d015ce /* DashboardViewController.swift in Sources */,
 				e7782ee485bec12ee3d2425d /* Accounts.model.swift in Sources */,
 				EBC6D04DCAFFA2057D06FB24 /* DTO.swift in Sources */,
+				EBC6DA6EF43004C1C5D1BA3C /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

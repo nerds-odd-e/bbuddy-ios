@@ -23,63 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        NotificationCenter.default.addObserver(self, selector: #selector(self.authStatusChanged), name: NSNotification.Name(AuthStatus.loggedOut.rawValue), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(self.authStatusChanged), name: NSNotification.Name(AuthStatus.loggedIn.rawValue), object: nil)
-        if !AuthorizedToken.valid() {
-            NotificationCenter.default.post(name: Notification.Name(rawValue: AuthStatus.loggedOut.rawValue), object: AuthStatus.loggedOut)
-        }
+        Auth.setup(window!)
         return true
     }
     
-    private func showLoginPage() {
-        if let snapshot = window!.snapshotView(afterScreenUpdates: true) {
-            let controller = UIStoryboard(name: "Login", bundle: Bundle.main).instantiateInitialViewController()
-            controller?.view.addSubview(snapshot)
-            let previousViewController = window!.rootViewController
-            window!.rootViewController = controller
 
-            if let previousViewController = previousViewController {
-                previousViewController.dismiss(animated: false)
-            }
-
-            
-            UIView.animate(withDuration: 0.5, animations: {
-                snapshot.transform = CGAffineTransform(translationX: -600.0, y: 0.0)
-            }, completion: { (_: Bool) in
-                snapshot.removeFromSuperview()
-            })
-        }
-    }
-    
-    private func showHomePage() {
-        if let snapshot = window!.snapshotView(afterScreenUpdates: true) {
-            let controller = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateInitialViewController()
-            controller?.view.addSubview(snapshot)
-            let previousViewController = window!.rootViewController
-            window!.rootViewController = controller
-
-            if let previousViewController = previousViewController {
-                previousViewController.dismiss(animated: false)
-            }
-
-            UIView.animate(withDuration: 0.5, animations: {
-                snapshot.transform = CGAffineTransform(translationX: 600.0, y: 0.0)
-            }, completion: { (_: Bool) in
-                snapshot.removeFromSuperview()
-            })
-        }
-    }
-    
-    @objc private func authStatusChanged(notification: NSNotification){
-        if let status = notification.object as? AuthStatus {
-            if status == .loggedOut {
-                showLoginPage()
-            } else {
-                showHomePage()
-            }
-        }
-    }
-    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

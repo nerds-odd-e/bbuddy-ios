@@ -27,8 +27,7 @@ class Api {
                 case 200...299:
                     handler(response)
                 case 401:
-                    AuthorizedToken.clear()
-                    NotificationCenter.default.post(name: Notification.Name(rawValue: AuthStatus.loggedOut.rawValue), object: AuthStatus.loggedOut)
+                    Auth.logout()
                 default:
                     print("error: \(response.statusCode)")
                 }
@@ -69,7 +68,7 @@ class Api {
     
     func signIn(_ email: String, password: String, action: @escaping () -> Void){
         request(.signIn(email: email, password: password)) { _ in
-            NotificationCenter.default.post(name: Notification.Name(rawValue: AuthStatus.loggedIn.rawValue), object: AuthStatus.loggedIn)
+            Auth.login()
             action()
         }
     }
